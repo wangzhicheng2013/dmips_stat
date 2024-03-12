@@ -18,7 +18,7 @@ static inline bool bind_cpu(int cpu_no) {
     }
     int run_mask = (0x00000001 << cpu_no);
     // set current threads to cpu
-    return ThreadCtl(_NTO_TCTL_RUNMASK, (void *)(&run_mask)) != -1;
+    return ThreadCtl(_NTO_TCTL_RUNMASK, (void *)(run_mask)) != -1;
 #else
     cpu_set_t mask = { 0 };
     CPU_SET(cpu_no, &mask);
