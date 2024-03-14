@@ -9,6 +9,7 @@
 
 #include "color_log.hpp"
 #include "global_data_define.hpp"
+
 class dmips_stat {
 public:
     static dmips_stat& get_instance() {

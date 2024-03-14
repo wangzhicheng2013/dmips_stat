@@ -6,8 +6,8 @@
 #include <fcntl.h>
 #include <sched.h>
 #include <thread>
-//#define QNX_OS
-#define ANDROID_OS
+#define QNX_OS
+//#define ANDROID_OS
 #ifdef QNX_OS
 #include <sys/neutrino.h>
 #endif
